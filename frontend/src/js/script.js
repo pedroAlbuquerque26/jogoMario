@@ -3,7 +3,6 @@ const pipe = document.querySelector('.pipe');
 const gameOverScreen = document.getElementById('gameOverScreen');
 const restartBtn = document.getElementById('restartBtn');
 
-
 const jump = () => {
     mario.classList.add('jump');
     setTimeout(() => {
