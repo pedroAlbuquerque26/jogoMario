@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid green;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #87CEEB, #ffffff);
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 1.5s linear infinite;
+}
+
+.mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump{
+    animation: jump 500ms ease-in-out ;
+}
+
+.cloud {
+    position: absolute;
+    width: 550px;
+    animation: cloud-animation 20s linear infinite;
+}
+
+@keyframes cloud-animation {
+    0% {
+        right: -550px;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+.game-over-screen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-over-screen.active {
+    display: flex;
+}
+
+.game-over-box {
+    background-color: #fff;
+    border: 4px solid #e52521;
+    border-radius: 20px;
+    padding: 40px 60px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(229, 37, 33, 0.5);
+}
+
+.game-over-box h1 {
+    font-family: Arial, sans-serif;
+    font-size: 48px;
+    color: #e52521;
+    margin-bottom: 10px;
+}
+
+.game-over-box p {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+#restartBtn {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #009432;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#restartBtn:hover {
+    background-color: #007a28;
+}

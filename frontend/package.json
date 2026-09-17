@@ -1,0 +1,11 @@
+{
+  "name": "jogo-mario",
+  "version": "1.0.0",
+  "description": "Jogo Mario Jump - Front End",
+  "scripts": {
+    "dev": "npx live-server src --port=3000"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

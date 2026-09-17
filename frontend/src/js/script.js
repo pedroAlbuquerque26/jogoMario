@@ -1,5 +1,7 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
+const gameOverScreen = document.getElementById('gameOverScreen');
+const restartBtn = document.getElementById('restartBtn');
 
 
 const jump = () => {
@@ -25,7 +27,13 @@ const loop = setInterval(() => {
         mario.style.marginLeft = '50px';
 
         clearInterval(loop);
+
+        gameOverScreen.classList.add('active');
     }
 }, 10);
 
 document.addEventListener('keydown', jump);
+
+restartBtn.addEventListener('click', () => {
+    location.reload();
+});
