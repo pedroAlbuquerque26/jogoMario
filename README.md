@@ -1,7 +1,9 @@
 # Jogo Mario
 ## Descrição
 
-O projeto consiste no desenvolvimento de um jogo inspirado em Mario, utilizando HTML, CSS e JavaScript. O jogador deverá controlar o personagem e desviar de obstáculos ao longo do cenário, buscando permanecer no jogo pelo maior tempo possível. O projeto tem como objetivo aplicar na prática conceitos de desenvolvimento web, lógica de programação, manipulação de elementos da página e interação com o usuário.
+Jogo Mario é um projeto de desenvolvimento web inspirado no clássico universo do personagem Mario, criado com o objetivo de aplicar conceitos de programação e construção de interfaces interativas utilizando HTML, CSS e JavaScript. O jogo combina elementos visuais, animações e eventos de teclado para proporcionar uma experiência dinâmica ao usuário diretamente no navegador, sem a necessidade de instalação de softwares adicionais.
+
+O desenvolvimento deste projeto tem como finalidade consolidar conhecimentos fundamentais de desenvolvimento Front-end, incluindo estruturação de páginas com HTML, estilização responsiva com CSS e implementação da lógica do jogo com JavaScript. Também busca estimular o trabalho em equipe, a organização do código e a aplicação de boas práticas de desenvolvimento de software em um projeto prático e interativo.
 
 ## Tecnologias
 - HTML
